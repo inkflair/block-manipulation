@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block Manipulation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!--Main--> 
+	<div class="container">
+		<div class="block">
+			<h3 class="block-heading">Position Y</h3>
+			<div class="wrapper-y">
+				<input type="range" class="slider-y" id="slider-y" max="600" min="50" value="0" step="0.1">
+				<label for="slider-y">
+					<span>0</span>
+					<span>600</span>
+				</label>
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="block-heading">Position X</h3>
+			<div class="wrapper-x">
+				<label for="slider-x">
+					<span>0</span>
+					<span>1000</span>
+				</label>
+				<input type="range" class="slider-x" id="slider-x" max="1000" min="0" value="0" step="0.1">
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="block-heading">Size</h3>
+			<div class="wrapper-x size">
+				<label for="size">
+					<span>0</span>
+					<span>2</span>
+				</label>
+				<input type="range" class="slider-x size" id="size" max="2" min="0.2" value="1" step="0.1">
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="block-heading">Opcacity</h3>
+			<div class="wrapper-x opacity">
+				<label for="opacity">
+					<span>0</span>
+					<span>1</span>
+				</label>
+				<input type="range" class="opacity slider-x" id="opacity" max="1" min="0" value="1" step="0.1">
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="block-heading">Shape Type</h3>
+			<div class="shape-type wrapper-x">
+				<select id="shape" name="shape">
+					<option value="1">Square</option>
+					<option value="2">Circle</option>
+					<option value="3">Rhombus</option>
+				</select>
+				<button id="ok-shape">OK</button>
+			</div>
+		</div>
+		<div class="block">
+			<div class="title">
+			<h3 class="block-heading">Hex</h3>
+			</div>
+			<div class="wrapper-hex">
+				<label for="size">
+					<span>#</span>
+				</label>
+				<input type="text" class="hex" id="hex">			
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="block-heading">RGBA</h3>
+			<div class="rgba-container">
+					<input type="range" id="rgba-r" max="255" min="0" value="255">
+					<label for="rgba-r">R</label>
+					<input type="range" id="rgba-g" max="255" min="0" value="0">
+					<label for="rgba-g">G</label>
+					<input type="range" id="rgba-b" max="255" min="0" value="0">
+					<label for="rgba-b">B</label>
+					<input type="range" id="rgba-a" max="1" min="0" step="0.01" value="1">
+					<label for="rgba-a">A</label>
+			</div>
+		</div>
+	</div>
+	<!--Block--> 
+	<div class="move-block">
+		<div id="block"></div>
+	</div>
+	<script type="text/javascript" src="block.js"></script>
+</body>
+</html>
