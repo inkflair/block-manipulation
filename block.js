@@ -78,26 +78,4 @@ window.onload = function() {
 		block.style.backgroundColor = 'rgb(' + r.value + ',' + g.value + ',' + b.value + ',' + a.value +')';
 	})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
